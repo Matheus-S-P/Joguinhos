@@ -1,0 +1,53 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Joguinho de tentativa e erro entre 1 a 100
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 28/11/2022
+Var
+   // Seção de Declarações das variáveis
+   num, numAleat, num2, tent : inteiro
+   Nome : caractere
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+
+   aleatorio 0, 100
+   leia(numAleat)
+   limpatela
+   aleatorio off
+
+   escreval("Ola pessoa, qual seu nome?")
+   leia(Nome)
+
+   escreval("Vamos la ",Nome,", tente acertar o numero aleatorio")
+   escreva("Digite um numero: ")
+   leia(num)
+   tent <- 11
+
+   enquanto (num <> numAleat) e (tent > 1) faca
+      tent <- tent - 1
+
+      se num > numAleat entao
+         escreval("O numero digitado e maior, tentativas restantes: ", tent)
+         escreval("Digite um numero")
+         leia(num)
+
+      senao
+
+         escreval("O numero digitado e menor , tentativas restantes: ", tent)
+         escreval("Digite um numero")
+         leia(num)
+
+      fimse
+   fimenquanto
+
+   se num = numAleat entao
+
+      escreval("Parabens ", nome, ", voce acertou o numero aleatorio")
+
+   senao
+
+      escreval("Acabaram as tentativas, obrigado por jogar ", Nome)
+   fimse
+fimalgoritmo
