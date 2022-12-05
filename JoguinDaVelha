@@ -38,6 +38,7 @@ Inicio
       escreval("escolha uma casa: ")
       escreval("OBS: X primeiro e depois O, e por ai vai")
       leia(num)
+      limpatela
 
       se num = 1 entao
          se valor2 = 1 entao
@@ -48,17 +49,14 @@ Inicio
             fimse
          fimse
 
-
-
-
-
          escreval("")
-
+         Escreval("      +---+---+---+")
          Escreval("      | ", jogoMatriz[1,1], " | ", jogoMatriz[1,2], " | ", jogoMatriz[1,3], " |")
          Escreval("      +---+---+---+")
          Escreval("      | ", jogoMatriz[2,1], " | ", jogoMatriz[2,2], " | ", jogoMatriz[2,3], " |")
          Escreval("      +---+---+---+")
          Escreval("      | ", jogoMatriz[3,1], " | ", jogoMatriz[3,2], " | ", jogoMatriz[3,3], " |")
+         Escreval("      +---+---+---+")
          escreval("")
          escreval("")
       senao
@@ -71,8 +69,6 @@ Inicio
                fimse
             fimse
 
-
-
             escreval("")
             Escreval("      +---+---+---+")
             Escreval("      | ", jogoMatriz[1,1], " | ", jogoMatriz[1,2], " | ", jogoMatriz[1,3], " |")
@@ -80,6 +76,7 @@ Inicio
             Escreval("      | ", jogoMatriz[2,1], " | ", jogoMatriz[2,2], " | ", jogoMatriz[2,3], " |")
             Escreval("      +---+---+---+")
             Escreval("      | ", jogoMatriz[3,1], " | ", jogoMatriz[3,2], " | ", jogoMatriz[3,3], " |")
+            Escreval("      +---+---+---+")
             escreval("")
             escreval("")
          senao
@@ -99,6 +96,7 @@ Inicio
                Escreval("      | ", jogoMatriz[2,1], " | ", jogoMatriz[2,2], " | ", jogoMatriz[2,3], " |")
                Escreval("      +---+---+---+")
                Escreval("      | ", jogoMatriz[3,1], " | ", jogoMatriz[3,2], " | ", jogoMatriz[3,3], " |")
+               Escreval("      +---+---+---+")
                escreval("")
                escreval("")
             senao
@@ -118,6 +116,7 @@ Inicio
                   Escreval("      | ", jogoMatriz[2,1], " | ", jogoMatriz[2,2], " | ", jogoMatriz[2,3], " |")
                   Escreval("      +---+---+---+")
                   Escreval("      | ", jogoMatriz[3,1], " | ", jogoMatriz[3,2], " | ", jogoMatriz[3,3], " |")
+                  Escreval("      +---+---+---+")
                   escreval("")
                   escreval("")
                senao
@@ -137,6 +136,7 @@ Inicio
                      Escreval("      | ", jogoMatriz[2,1], " | ", jogoMatriz[2,2], " | ", jogoMatriz[2,3], " |")
                      Escreval("      +---+---+---+")
                      Escreval("      | ", jogoMatriz[3,1], " | ", jogoMatriz[3,2], " | ", jogoMatriz[3,3], " |")
+                     Escreval("      +---+---+---+")
                      escreval("")
                      escreval("")
                   senao
@@ -157,6 +157,7 @@ Inicio
                         Escreval("      | ", jogoMatriz[2,1], " | ", jogoMatriz[2,2], " | ", jogoMatriz[2,3], " |")
                         Escreval("      +---+---+---+")
                         Escreval("      | ", jogoMatriz[3,1], " | ", jogoMatriz[3,2], " | ", jogoMatriz[3,3], " |")
+                        Escreval("      +---+---+---+")
                         escreval("")
                         escreval("")
                      senao
@@ -170,11 +171,13 @@ Inicio
                            fimse
 
                            escreval("")
+                           Escreval("      +---+---+---+")
                            Escreval("      | ", jogoMatriz[1,1], " | ", jogoMatriz[1,2], " | ", jogoMatriz[1,3], " |")
                            Escreval("      +---+---+---+")
                            Escreval("      | ", jogoMatriz[2,1], " | ", jogoMatriz[2,2], " | ", jogoMatriz[2,3], " |")
                            Escreval("      +---+---+---+")
                            Escreval("      | ", jogoMatriz[3,1], " | ", jogoMatriz[3,2], " | ", jogoMatriz[3,3], " |")
+                           Escreval("      +---+---+---+")
                            escreval("")
                            escreval("")
                         senao
@@ -194,6 +197,7 @@ Inicio
                               Escreval("      | ", jogoMatriz[2,1], " | ", jogoMatriz[2,2], " | ", jogoMatriz[2,3], " |")
                               Escreval("      +---+---+---+")
                               Escreval("      | ", jogoMatriz[3,1], " | ", jogoMatriz[3,2], " | ", jogoMatriz[3,3], " |")
+                              Escreval("      +---+---+---+")
                               escreval("")
                               escreval("")
                            senao
@@ -217,7 +221,6 @@ Inicio
                                  escreval("")
                                  escreval("")
 
-
                               fimse
                            fimse
                         fimse
@@ -228,3 +231,5 @@ Inicio
          fimse
       fimse
    fimenquanto
+
+Fimalgoritmo
