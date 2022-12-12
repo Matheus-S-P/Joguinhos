@@ -1,0 +1,44 @@
+
+mat = [0,1,2,3,
+         4,5,6,
+         7,8,9]
+
+c = 1
+valor = 0
+
+while c == 1 :
+       
+       valor = valor + 1   
+       valor2 = valor % 2
+       print("+---+---+---+")
+       print("|",mat[1],"|",mat[2],"|",mat[3],"|")
+       print("+---+---+---+")
+       print("|",mat[4],"|",mat[5],"|",mat[6],"|")
+       print("+---+---+---+")
+       print("|",mat[7],"|",mat[8],"|",mat[9],"|")
+       print("+---+---+---+ \n")
+
+       if valor2 == 0:
+              num = int(input("Vez do O , escolha uma casa: "))
+       elif valor2 == 1:
+              num = int(input("Vez do X , escolha uma casa: ")) 
+       
+       if num < 0 or num > 9:
+              print("NUMERO INVALIDO")
+       if num == 1:
+              if valor2 == 1:
+                     mat[0]= 1
+       elif valor2 == 0:
+              mat[0] = 1
+              if num == 2:
+                     if valor2 == 1:
+                            mat[1] = 1
+       elif valor2 == 0:
+              mat[1] = 1
+              if num == 3:
+                     if valor2 == 1:
+                            mat[2] = 1
+       elif valor2 == 0:
+              mat[2] = 1
+
+              
