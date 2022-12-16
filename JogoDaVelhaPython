@@ -1,5 +1,3 @@
-#Jogo da Velha, onde se pode jogar com 2 jogadores ou contra o computador
-#(OBS: o sistema do ~player VS maquina~ e bem simples e a inteligencia e bem baixa, mas funciona)
 import os
 import random
 
@@ -63,9 +61,9 @@ while game == 9 :
                 os.system('cls')
                 
                 tabuleiro()
-                # print(valor)
-                # print(valor2)
-                # print(c)
+                print(valor)
+                print(valor2)
+                print(c)
                 
                 if valor2 == 0:
                     num = int(input("Vez do O , escolha uma casa: "))
@@ -357,6 +355,9 @@ while game == 9 :
                 os.system('cls')
                 print("Boa sorte jogador\n")
                 tabuleiro()
+                print(valor)
+                print(valor2)
+                print(c)
                 
                 
                 if valor2 == 0:
@@ -460,9 +461,17 @@ while game == 9 :
                 elif valor2 == 1:
                     
                     
-                    if (mat[2] == mat[3] and num1 == 0) or (mat[4] == mat[7] and num1 ==0) or (mat[5] == mat[9] and num1 == 0) or(rand == 1 and num1 == 0):
+                    if (mat[2] == mat[3]and mat[2] == "O"and num1 == 0) or (mat[4] == mat[7]and mat[4] == "O" and num1 ==0) or (mat[5] == mat[9] and mat[1] == "O" and num1 == 0):
                         
-                        if valor2 == 1:
+                            mat[1]= "X"
+                            num1 = num1 + 1
+                            valor = valor + 1 
+                            valor2 = valor % 2
+                            c1 = c1 - 1
+                            game = game - 1
+                    elif rand == 1 and num1 == 0:
+                        
+                        
                             mat[1]= "X"
                             num1 = num1 + 1
                             valor = valor + 1 
@@ -470,8 +479,16 @@ while game == 9 :
                             c1 = c1 - 1
                             game = game - 1
                         
-                    if (mat[1] == mat[3] and num2 ==0) or (mat[5] == mat[8] and num2 ==0)or(rand == 2 and num2 == 0):
-                        if valor2 == 1:
+                    if (mat[1] == mat[3] and mat[1] == "O" and num2 ==0) or (mat[5] == mat[8] and mat[5] == "O" and num2 ==0):
+                       
+                            mat[2]= "X"
+                            num2 = num2 + 1
+                            valor = valor + 1 
+                            valor2 = valor % 2
+                            c1 = c1 - 1
+                            game = game - 1
+                    elif rand == 2 and num2 == 0:
+                        
                             mat[2]= "X"
                             num2 = num2 + 1
                             valor = valor + 1 
@@ -480,19 +497,35 @@ while game == 9 :
                             game = game - 1
                         
                     
-                    if (mat[1] == mat[2] and num3 ==0) or (mat[6] == mat[9] and num3 ==0)or (mat[5] == mat[7] and num3 ==0)or (rand == 3 and num3 == 0):
-                        if valor2 == 1:
+                    if (mat[1] == mat[2] and mat[1] == "O" and num3 ==0) or (mat[6] == mat[9]and mat[6] == "O" and num3 ==0)or (mat[5] == mat[7] and mat[5] == "O" and num3 ==0): 
+                        
                             mat[3]= "X"
                             num3 = num3 + 1
                             valor = valor + 1 
                             valor2 = valor % 2
                             c1 = c1 - 1
                             game = game - 1
-                       
+                    elif rand == 3 and num3 == 0:
+                        
+                            mat[3]= "X"
+                            num3 = num3 + 1
+                            valor = valor + 1 
+                            valor2 = valor % 2
+                            c1 = c1 - 1
+                            game = game - 1
+                        
 
 
-                    if (mat[1] == mat[7] and num4 ==0) or (mat[5] == mat[6] and num4 ==0)or (rand == 4 and num4 == 0):
-                        if valor2 == 1:
+                    if (mat[1] == mat[7] and mat[1] == "O" and num4 ==0) or (mat[5] == mat[6] and mat[5] == "O" and num4 ==0):
+                          
+                            mat[4]= "X"
+                            num4 = num4 + 1
+                            valor = valor + 1 
+                            valor2 = valor % 2
+                            c1 = c1 - 1
+                            game = game - 1 
+                    elif rand == 4 and num4 == 0:
+                        
                             mat[4]= "X"
                             num4 = num4 + 1
                             valor = valor + 1 
@@ -501,8 +534,16 @@ while game == 9 :
                             game = game - 1
                         
 
-                    if (mat[1] == mat[9] and num5 ==0)or(mat[7] == mat[3] and num5 ==0)or(mat[4] == mat[6] and num5 ==0)or(mat[2] == mat[8] and num5 ==0)or (rand == 5 and num5 == 0):
-                        if valor2 == 1:
+                    if (mat[1] == mat[9]and mat[1] == "O" and num5 ==0)or(mat[7] == mat[3]and mat[7] == "O" and num5 ==0)or(mat[4] == mat[6]and mat[4] == "O" and num5 ==0)or(mat[2] == mat[8]and mat[2] == "O" and num5 ==0):
+                        
+                            mat[5]= "X"
+                            num5 = num5 + 1
+                            valor = valor + 1
+                            valor2 = valor % 2
+                            c1 = c1 - 1
+                            game = game - 1
+                    elif rand == 5 and num5 == 0:
+                        
                             mat[5]= "X"
                             num5 = num5 + 1
                             valor = valor + 1
@@ -511,8 +552,16 @@ while game == 9 :
                             game = game - 1
                         
 
-                    if (mat[4] == mat[5] and num6 ==0)or(mat[3] == mat[9] and num6 ==0)or (rand == 6 and num6 == 0):
-                        if valor2 == 1:
+                    if (mat[4] == mat[5]and mat[4] == "O" and num6 ==0)or(mat[3] == mat[9]and mat[3] == "O" and num6 ==0):
+                        
+                            mat[6]= "X"
+                            num6 = num6 + 1
+                            valor = valor + 1 
+                            valor2 = valor % 2
+                            c1 = c1 - 1
+                            game = game - 1
+                    elif rand == 6 and num6 == 0:
+                        
                             mat[6]= "X"
                             num6 = num6 + 1
                             valor = valor + 1 
@@ -521,8 +570,16 @@ while game == 9 :
                             game = game - 1
                         
 
-                    if (mat[4] == mat[1] and num7 ==0)or(mat[8] == mat[9] and num7 ==0)or(mat[5] == mat[3] and num7 ==0)or(rand == 7 and num7 == 0):
-                        if valor2 == 1:
+                    if (mat[4] == mat[1]and mat[4] == "O" and num7 ==0)or(mat[8] == mat[9]and mat[8] == "O" and num7 ==0)or(mat[5] == mat[3]and mat[5] == "O" and num7 ==0):
+                           
+                            mat[7]= "X"
+                            num7 = num7 + 1
+                            valor = valor + 1 
+                            valor2 = valor % 2
+                            c1 = c1 - 1
+                            game = game - 1
+                    elif rand == 7 and num7 == 0:
+                       
                             mat[7]= "X"
                             num7 = num7 + 1
                             valor = valor + 1 
@@ -531,8 +588,16 @@ while game == 9 :
                             game = game - 1
                     
                             
-                    if (mat[7] == mat[9] and num8 ==0)or(mat[2] == mat[5] and num8 ==0)or(rand == 8 and num8 == 0):
-                        if valor2 == 1:
+                    if (mat[7] == mat[9]and mat[7] == "O" and num8 ==0)or(mat[2] == mat[5]and mat[2] == "O" and num8 ==0):
+                        
+                            mat[8]= "X"
+                            num8 = num8 + 1
+                            valor = valor + 1 
+                            valor2 = valor % 2
+                            c1 = c1 - 1
+                            game = game - 1
+                    elif rand == 8 and num8 == 0:
+                        
                             mat[8]= "X"
                             num8 = num8 + 1
                             valor = valor + 1 
@@ -542,7 +607,15 @@ while game == 9 :
                         
                     
                             
-                    if (mat[7] == mat[8] and num8 ==0)or(mat[3] == mat[6] and num8 ==0)or(mat[1] == mat[5] and num8 ==0) or(rand == 9 and num9 == 0):
+                    if (mat[7] == mat[8]and mat[7] == "O" and num9 ==0)or(mat[3]and mat[3] == "O" == mat[6] and num9 ==0)or(mat[1] == mat[5]and mat[1] == "O" and num9 ==0) :
+                        if valor2 == 1:
+                            mat[9]= "X"
+                            num9 = num9 + 1
+                            valor = valor + 1 
+                            valor2 = valor % 2
+                            c1 = c1 - 1
+                            game = game - 1
+                    elif (rand == 9 and num9 == 0):
                         if valor2 == 1:
                             mat[9]= "X"
                             num9 = num9 + 1
@@ -552,7 +625,7 @@ while game == 9 :
                             game = game - 1 
                 if (mat[1] == mat[2] and mat[2] == mat[3] and mat[1] == "O") or (mat[4] == mat[5] and mat[5] == mat[6] and mat[5] == "O") or (mat[7] == mat[8] and mat[8] == mat[9] and mat[7] == "O") or (mat[1] == mat[4] and mat[4] == mat[7] and mat[1] == "O") or (mat[2] == mat[5] and mat[5] == mat[8] and mat[2] == "O") or (mat[3] == mat[6] and mat[6] == mat[9] and mat[3] == "O") or (mat[1] == mat[5] and mat[5] == mat[9] and mat[1] == "O") or (mat[3] == mat[5] and mat[5] == mat[7] and mat[3] == "O"):
                     
-                    o = 1
+                    
                     c = 0
                     
                     os.system('cls')  
@@ -676,4 +749,4 @@ while game == 9 :
                         case 3:
                             c1 = 0
                             os.system('cls')
-                            print("Obrigado por jogar")    
+                            print("Obrigado por jogar")
