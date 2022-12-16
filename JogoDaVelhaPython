@@ -1,3 +1,5 @@
+#Jogo da Velha, onde se pode jogar com 2 jogadores ou contra o computador
+#(OBS: o sistema do ~player VS maquina~ e bem simples e a inteligencia e bem baixa, mas funciona)
 import os
 import random
 
@@ -749,4 +751,4 @@ while game == 9 :
                         case 3:
                             c1 = 0
                             os.system('cls')
-                            print("Obrigado por jogar")
+                            print("Obrigado por jogar")   
